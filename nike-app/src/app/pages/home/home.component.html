@@ -1,0 +1,71 @@
+<div class="home-page">
+    <header>
+        <nav id="pre-menu">
+            <div id="logos">
+                <a href="#"> <img src="../media/jordan-icon.png" alt="" /></a>
+                <a href="#"> <img src="../media/converse-icon.png" alt="" /></a>
+            </div>
+            <div id="top-links">
+                <ul>
+                    <li><a href="#">Trova un negozio</a></li>
+                    <li><a href="#">Aiuto</a></li>
+                    <li><a href="#">Unisciti a noi</a></li>
+                    <li><a href="#">Accedi</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="box-menu">
+            <div id="logo"><a href="../home/home.html"> <img src="../media/logo.png" alt="" /></a></div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Novità e in evidenza</a></li>
+                        <li><a href="#">Uomo</a></li>
+                        <li><a href="#">Donna</a></li>
+                        <li><a href="#">Bambini</a></li>
+                        <li><a href="#">Outlet</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menu-buttons">
+                <div id="search-box">
+                    <input type="text" id="search" placeholder="Cerca" />
+                    <button><i class="fa fa-search " aria-hidden="true"></i></button>
+                </div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <p>Nuovi arrivi</p>
+        <p><a href="#">Acquista</a></p>
+    </div>
+
+    <div id="hero">
+        <img src="../../../assets/Home-media/hero-banner.jpg" alt="" />
+        <div id="hero-content">
+            <h1>REGALA IL MEGLIO</h1>
+            <h2>Ispirazione e movimento. Regalo perfetto.</h2>
+            <div id="hero-buttons">
+                <button>Acquista</button>
+                <button>Bambini</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-row">
+        <app-card-slider [list]="productList" [titolo]="'Trend della settimana'"></app-card-slider>
+
+    </div>
+    <div class="card-row">
+
+        <app-card-slider [list]="categoryList" [titolo]="'Acquista per sport'"></app-card-slider>
+
+    </div>
+
+    <div class="card-row">
+        <app-card-slider [list]="memberList" [titolo]="'Membership Nike'"></app-card-slider>
+
+    </div>
+</div>

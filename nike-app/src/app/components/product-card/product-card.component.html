@@ -1,0 +1,6 @@
+<!-- <img src="../../../assets/Home-media/scarpa_1.jpg" alt="" /> -->
+
+<img [src]="product.immagine" [alt]="product.nome" />
+<h4>{{ product.nome }}</h4>
+<p class="subtitle">{{ product.categoria }}</p>
+<p class="price">{{ product.prezzo | currency : "EUR" }}</p>

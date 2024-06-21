@@ -1,0 +1,54 @@
+#color-choice {
+    padding: 0.5em
+}
+
+#color-choice input[type=radio] {
+    display: none;
+}
+
+#color-choice input[type=radio]:checked+label {
+    transform: scale(1.25);
+    border: 1px solid black
+}
+
+/* 
+#color-choice input[type=radio]+label {
+    transform: scale(1.25);
+    border: 1px solid black
+} */
+
+
+
+#color-choice input[type=radio]+label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: 1px solid #9b9b9b;
+}
+
+
+.Rosso {
+    background-color: red;
+}
+
+.Nero {
+    background-color: blue;
+}
+
+.Verde {
+    background-color: green;
+}
+
+.Blu {
+    background-color: yellow;
+}
+
+.Bianco {
+    background-color: white;
+}
+
+.Grigio {
+    background-color: grey;
+}

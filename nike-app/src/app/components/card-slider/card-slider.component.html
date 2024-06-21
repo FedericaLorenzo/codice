@@ -1,0 +1,45 @@
+<div class="card-header">
+  <h3>{{ titolo }}</h3>
+  <div class="button-group">
+    <button
+      class="prev round grey grey"
+      (click)="prev()"
+      [disabled]="isPrevDisabled"
+    >
+      <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+    </button>
+    <button
+      class="next round grey"
+      (click)="next()"
+      [disabled]="isNextDisabled"
+    >
+      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+
+@if (titolo == "Trend della settimana"){
+<div #cardContainer class="card-container">
+  @for (product of list; track $index) {
+  <div #singleCard class="product card" (click)="goToDetail(product.id)">
+    <app-product-card [product]="product"></app-product-card>
+  </div>
+  }
+</div>
+} @else if (titolo == "Acquista per sport"){
+<div #cardContainer class="card-container">
+  @for (category of list; track $index) {
+  <div #singleCard class="sport card" (click)="goToCategory(category.name)">
+    <app-category-card [category]="category"></app-category-card>
+  </div>
+  }
+</div>
+} @else if (titolo == "Membership Nike"){
+<div #singleCard #cardContainer class="card-container">
+  @for (member of list; track $index) {
+  <div class="member card">
+    <app-member-card [member]="member"></app-member-card>
+  </div>
+  }
+</div>
+}

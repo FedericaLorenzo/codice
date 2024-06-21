@@ -1,0 +1,13 @@
+<div class="page-container">
+  <div class="side-bar-container">
+    <app-side-bar></app-side-bar>
+  </div>
+
+  <div class="products-container">
+    @for (product of productList; track $index) {
+    <div class="card" (click)="goToDetail(product.id)">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
+    }
+  </div>
+</div>

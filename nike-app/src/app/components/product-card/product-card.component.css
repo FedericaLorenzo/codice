@@ -1,0 +1,27 @@
+.card {
+    display: inline-block;
+    width: calc(100% / 3 - 20px);
+    margin: 0 0 2em 0;
+}
+
+.card img {
+    width: 97%;
+}
+
+
+.product h4 {
+    margin: 0;
+}
+
+.product .subtitle {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0.4em 0 0 0;
+    color: #707072;
+}
+
+.product .price {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0.6em 0 0 0;
+}

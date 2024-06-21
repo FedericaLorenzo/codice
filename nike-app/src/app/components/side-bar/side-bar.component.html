@@ -1,0 +1,53 @@
+<div class="side-bar-container">
+  <div class="categories-container">
+    <ul>
+      <li (click)="clickCategoryHandler(CategoryEnum.BASKET)">Basket</li>
+      <li (click)="clickCategoryHandler(CategoryEnum.RUNNING)">Running</li>
+      <li (click)="clickCategoryHandler(CategoryEnum.TRAINING)">Training</li>
+      <li (click)="clickCategoryHandler(CategoryEnum.TRAIL_RUNNING)">
+        Trail Running
+      </li>
+      <li (click)="clickCategoryHandler(CategoryEnum.SNEAKERS)">Sneakers</li>
+    </ul>
+  </div>
+  <form [formGroup]="colorForm">
+    <div class="color-selection">
+      <label class="checkbox-container">
+        <input formControlName="black" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="blue" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="brown" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="green" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="gray" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="orange" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="pink" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="purple" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+      <label class="checkbox-container">
+        <input formControlName="red" checked="checked" type="checkbox" />
+        <div class="checkmark"></div>
+      </label>
+    </div>
+  </form>
+</div>

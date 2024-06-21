@@ -1,0 +1,7 @@
+<img [src]="member.immagine" [alt]="member.sottotitolo" />
+<div class="member-overlay">
+    <p class="subtitle">{{member.sottotitolo}}</p>
+    <h4>{{member.titolo}}</h4>
+
+    <button (click)="callToAction(member.callToAction)">{{member.callToAction}}</button>
+</div>
